@@ -631,20 +631,21 @@ component page 에 접속해서 문서의 설명이 보여지는지 확인합니
 
 bower 의 [register](http://goo.gl/zr3Qgq) 를 사용해서 bower 패키지에 등록해보고록 하겠습니다. 명령은 아래와 같습니다.
 
-    ```
-    bower register <my-package-name> <git-endpoint>
-    ```
+```
+bower register <my-package-name> <git-endpoint>
+```
 
 등록하기전에는 `bower.json` 를 version 을 포함한 properties 를 수정하고 github 에 원하는 버전이 push 가 되었는지 확인합니다. 이후 아래 명령을 사용하여 register 해보도록 하겠습니다. %주의% 동일한 이름을 사용하면 안됩니다.
 
-    ```
-    bower register daum-map https://github.com/ragingwind/daum-map.git
-    ```
+```
+bower register daum-map https://github.com/ragingwind/daum-map.git
+```
+
 이제 `bower info` 명령을 사용해서 등록한 패키지의 정보를 쿼리 합니다.
 
-    ```
-    bower register daum-map https://github.com/ragingwind/daum-map.git
-    ```
+```
+bower register daum-map https://github.com/ragingwind/daum-map.git
+```
 
 이제 등록된 패키지는 `bower install daum-map` 으로 여러 개발자들이 사용할 수 있습니다.
 
