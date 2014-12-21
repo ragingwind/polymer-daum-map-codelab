@@ -1,0 +1,3 @@
+[submodule "components/daum-map"]
+	path = components/daum-map
+	url = https://github.com/ragingwind/daum-map.git
