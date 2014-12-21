@@ -33,11 +33,9 @@ Codelab 에서는 Yeoman 을 사용하여 Seed element 와 Github page 를 생�
 - git 과 github 계정 사용 가능
 - 다음맵 API 를 받을 수 있는 다음 계정
 - Yeoman, Bower, Grunt 설치
+  - Yeoman, generator-polymer 설치: `npm install -g yo bower generator-polymer`
 - Polymer 를 위한 공식 Generator 인 generator-polymer 설치
 
-
-    # Note: Yeoman, generator-polymer 설치
-    npm install -g yo bower generator-polymer
 
 ### 구현된 daum-map pull 하기
 
