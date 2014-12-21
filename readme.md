@@ -295,7 +295,7 @@ fireLasers: function() {
 
 선언후에 다음맵이 제대로 보이는지 확인해보겠습니다.
 
-[그림]
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-01-bare-map.png)
 
 ## 4. Change LatLng of Daum Map
 
@@ -413,7 +413,7 @@ fireLasers: function() {
 
 이제 슬라이드를 조작해서 맵의 센터가 변경되는지 확인합니다.
 
-[그림]
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-02-latlng.png)
 
 ## 5. Change Level of Daum Map 
 
@@ -442,6 +442,8 @@ fireLasers: function() {
       this.map && this.map.setLevel(newLevel);
     },
     ```
+
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-03-level.png)
 
 ## 6. Change Width / Height of Daum Map
 
@@ -489,7 +491,9 @@ fireLasers: function() {
  
 이제 맵에서 맵컨테이너의 크기가 변경되는 것을 확인해봅니다.
 
-## 9. Mouse event Delegate
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-04-width-height.png)
+
+## 7. Mouse event Delegate
 
 다음맵에서 제공하는 여러 이벤트 중에서 간단한 클릭 이벤트를 인터페이스로 만들어 보겠습니다. 먼저 `daum-map.html` 의 `ready` method 에 클릭이벤트를 처리하도록 코드를 추가하겠습니다. 사용자가 맵을 클릭하면 다음맵은 이벤트를 발생시키고 다시 이 component 내에서 `map-click` 이벤트로 다시 외부에 발생시킵니다.
 
@@ -547,7 +551,7 @@ fireLasers: function() {
 
 이제 맵을 클릭하면 상단의 위도/경도 값이 바뀌는지 확인합니다.
 
-[그림]
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-05-full.png)
 
 ## 8. Component page for Developers
 
@@ -596,8 +600,7 @@ fireLasers: function() {
 
 component page 에 접속해서 문서의 설명이 보여지는지 확인합니다.
 
-[그림]
-
+![](https://raw.githubusercontent.com/ragingwind/polymer-daum-map-codelab/master/resources/daum-map-07-landingpage.png)
 
 ## 9. Export the Component page to Github page
 
