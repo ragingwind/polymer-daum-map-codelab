@@ -36,7 +36,6 @@ Codelab 에서는 Yeoman 을 사용하여 Seed element 와 Github page 를 생�
   - Yeoman, generator-polymer 설치: `npm install -g yo bower generator-polymer`
 - Polymer 를 위한 공식 Generator 인 generator-polymer 설치
 
-
 ### 구현된 daum-map pull 하기
 
 daum-map 은 이미 구현되어 github 에 있습니다. 현재 repogitory 에 submodule 로 추가되어 있으니 미리 구현된 것을 보실분은 아래 명령을 통해서 submodule 을 update 하세요
@@ -151,13 +150,9 @@ fireLasers: function() {
 
 ### Get a Daum API key for Daum Map
 
-다음 지도를 사용하기 위해서는 [지도형 API 신청](http://goo.gl/Rs0yco) 페이지에서 API 를 키를 먼저 발급 받으셔야 합니다.
+다음 지도를 사용하기 위해서는 [지도형 API 신청](http://goo.gl/Rs0yco) 페이지에서 API 를 키를 먼저 발급 받으셔야 합니다. 키를 등록할때는 HTTP Referrer 를 입력받는데 로컬에서 개발할 경우에는 http://localhost:[PORT] 를 이후에는 http://[GITHUB-ID].github.io 를 사용하셔야 합니다. 현재는 수정이 안되니 두개를 발급하신다고 생각하지면 됩니다. 등록이 성공적으로 끝나게 되면 아래와 같은 키가 발급됩니다.
 
-키를 등록할때는 HTTP Referrer 를 입력받는데 로컬에서 개발할 경우에는 http://localhost:[PORT] 를 이후에는 http://[GITHUB-ID].github.io 를 사용하셔야 합니다. 현재는 수정이 안되니 두개를 발급하신다고 생각하지면 됩니다.
-
-등록이 성공적으로 끝나게 되면 아래와 같은 키가 발급됩니다.
-
-  a043a4e407075e23d378123cc6bdeef2373586867914e4
+    a043a4e407075e23d378123cc6bdeef2373586867914e4
 
 ### Create a Daum Map with Options
 
