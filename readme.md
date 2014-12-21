@@ -10,6 +10,20 @@
 
 ### Steps
 
+1. [Prerequisites](https://github.com/ragingwind/polymer-daum-map-codelab#0-prerequisites)
+1. [Getting set up](https://github.com/ragingwind/polymer-daum-map-codelab#1-getting-set-up)
+1. [Preview the Component](https://github.com/ragingwind/polymer-daum-map-codelab#2-preview-the-component)
+1. [Create a Daum Map](https://github.com/ragingwind/polymer-daum-map-codelab#2-create-a-daum-map)
+1. [Declare <daum-map> on Your demo.html](https://github.com/ragingwind/polymer-daum-map-codelab#3-declare-daum-map-on-your-demohtml)
+1. [Change LatLng of Daum Map](https://github.com/ragingwind/polymer-daum-map-codelab#4-change-latlng-of-daum-map)
+1. [Change Level of Daum Map](https://github.com/ragingwind/polymer-daum-map-codelab#5-change-level-of-daum-map)
+1. [Change Width / Height of Daum Map](https://github.com/ragingwind/polymer-daum-map-codelab#6-change-width--height-of-daum-map)
+1. [Mouse event Delegate](https://github.com/ragingwind/polymer-daum-map-codelab#7-mouse-event-delegate)
+1. [Component page for Developers](https://github.com/ragingwind/polymer-daum-map-codelab#8-component-page-for-developers)
+1. [Export the Component page to Github page](https://github.com/ragingwind/polymer-daum-map-codelab#9-export-the-component-page-to-github-page)
+1. [Publish package to bower](https://github.com/ragingwind/polymer-daum-map-codelab#10-publish-package-to-bower)
+1. [That's all folks](https://github.com/ragingwind/polymer-daum-map-codelab#11-thats-all-folks)
+
 ## 0. Prerequisites
 
 이 Codelab 은 Polymer 에 대한 기초적인 지식이 있는 개발자를 대상으로 하고 있습니다. CLI 환경에서 작업이 익숙하거나 Node.js 로 만들어진 도구 사용에 무리가 없으셔야 합니다. 실제 Polymer APIs 와 attributes 등에 대한 자세한 설명이 없습니다. 충분한 설명을 위해서는 [Polymer Polytechnic 의 Codelabs](http://goo.gl/1WeU2v) 과정을 참고하세요.
@@ -24,6 +38,13 @@ Codelab 에서는 Yeoman 을 사용하여 Seed element 와 Github page 를 생�
 
     # Note: Yeoman, generator-polymer 설치
     npm install -g yo bower generator-polymer
+
+### 구현된 daum-map pull 하기
+
+daum-map 은 이미 구현되어 github 에 있습니다. 현재 repogitory 에 submodule 로 추가되어 있으니 미리 구현된 것을 보실분은 아래 명령을 통해서 submodule 을 update 하세요
+
+    git submodule init
+    git submodule update
 
 ## 1. Getting set up
 
