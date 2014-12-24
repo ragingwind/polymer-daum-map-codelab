@@ -519,18 +519,16 @@ fireLasers: function() {
     },
     ```
   
-1. 다음맵에 클릭 이벤트에 대한 event listenenr 를 추가시키고 위에서 추가한 method 를 호출하도록 코드를 구현합니다.  
-   
+1. `daum-map.html` 에서 다음맵의 클릭 이벤트에 대한 event listenenr 를 추가시키고 위에서 추가한 method 를 호출하도록 다음맵 생성하는 코드 아래에 추가합니다.
     ```
-    window.addEventListener('polymer-ready', function() {
-
+    daum.maps.load(function() {
       ...
-
-      daumMap.addEventListener('map-click', function(e) {
-        setLatLng(e.detail.latLng.getLat(), e.detail.latLng.getLng());
+      
+      daum.maps.event.addListener(_this.map, 'click', function(e) {
+        _this.fireMapClick(e);
       });
     });
-    ```
+    ```      
     - `click` 은 `polymer-element` 에 기본으로 제공되는 이벤트입니다. `map-click` 으로 구분했습니다.
 
 1. 먼저 클릭 이벤트의 내용을 보여줄 라벨(id="click-latlng")을 맵컨테이너 위에 추가합니다.
@@ -552,8 +550,13 @@ fireLasers: function() {
 1. `demo.html` 내에 `map-click` 이벤트를 처리할 코드를 추가합니다. 넘어온 event argument 의 detail 에는 다음맵에서 넘겨준 event 정보가 있습니다. 그 중에서 latLng 를 사용하여 현재 클릭한 곳의 위도/경도 값을 알 수 있습니다. 그 값을 앞에서 추가한 `setLatLng` 함수를 사용해서 출력합니다.
 
     ```
-    daumMap.addEventListener('map-click', function(e) {
-      setLatLng(e.detail.latLng.getLat(), e.detail.latLng.getLng());
+    window.addEventListener('polymer-ready', function() {
+
+      ...
+
+      daumMap.addEventListener('map-click', function(e) {
+        setLatLng(e.detail.latLng.getLat(), e.detail.latLng.getLng());
+      });
     });
     ```
 
