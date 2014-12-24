@@ -62,13 +62,13 @@ daum-map 은 이미 구현되어 github 에 있습니다. 현재 repogitory 에 
 
 따라서 아래 명령으로 프로젝트 최상위 경로와 Components 를 위한 경로를 생성합니다.
 
-  mkdir -p daum-map/components && cd $_
+    mkdir -p daum-map/components && cd $_
 
 ### Generate a new Polymer seed element via yeoman
 
 이제 `daum-map/components` (경로)에서 Yeoman 의 yo 명령을 통해서 새로운 Seed element 를 생성해보겠습니다.
 
-  yo polymer:seed daum-map
+    yo polymer:seed daum-map
 
 명령을 실행하면 간단한 질문 (github id) 에 대답을 하면 Yeoman 에서는 프로젝트에 필요한 의존성이 있는 파일을 설치하게 됩니다. 의존성 있는 파일의 목록은 node 패키지는 `package.json` 그리고 bower 패키지는 `bower.json` 에 목록이 있습니다. 모두 설치가 끝나면 `ls` 명령으로 아래와 같이 구성이 되었는지 확인합니다.
 
